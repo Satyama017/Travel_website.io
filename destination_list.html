@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:wght@200&family=Poppins:wght@300&family=Wix+Madefor+Display:wght@500&family=Ysabeau:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:wght@200&family=Wix+Madefor+Display:wght@500&family=Ysabeau:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Wix+Madefor+Display:wght@500&family=Ysabeau:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            margin: 0 0 0 0;
+            font-family: 'Happy Monkey', cursive;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Wix Madefor Display', sans-serif;
+            font-family: 'Ysabeau', sans-serif;
+            background: url("https://techbeasts.com/wp-content/uploads/2016/12/4434975-mountain-wallpapers.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 90px 0 90px;
+            background-color: rgba(0, 0, 0, 0.01);
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .head {
+            background-color: rgba(0, 0, 0, 0.01);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 0 23px 0 23px;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Wix Madefor Display', sans-serif;
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        a:hover {
+            font-size: 18px;
+            color: red;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .logo {
+            padding-top: 10px;
+            font-family: 'Happy Monkey', cursive;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Wix Madefor Display', sans-serif;
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 29px;
+            font-weight: 800;
+            color: rgb(60, 216, 251)
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .main_h1 {
+            font-size: 25px;
+            color: white;
+            margin: 150px 150px 0 150px;
+            
+        }
+
+        .lower_top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .lower_top_right {
+      padding-top: 80px;
+      padding-right: 100px;
+    }
+
+    .lower_top_left {
+      padding-left: 100px;
+      text-align: left;
+    }
+
+    .lower_middle_1 {
+      width: 360px;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      border-radius: 20px;
+    }
+
+    .lower_middle_img {
+      width: 360px;
+      height: 300px;
+      border-radius: 20px 20px 0 0 ;
+    }
+
+    .for_padding {
+      padding: 0px 45px 0px 45px;
+    }
+
+    .lower_middle_text_1 , .lower_middle {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .lower_middle_1:hover{
+      box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      border-radius: 30px;
+    }
+    .lower_middle_text{
+      height: 230px;
+    }
+
+    .explore_btn {
+      text-align: center;
+    }
+
+    .explore_btn_1 {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      color: rgb(4, 24, 24);
+      font-family: 'Happy Monkey', cursive;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Wix Madefor Display', sans-serif;
+      font-family: 'Ysabeau', sans-serif;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 25px;
+      padding: 10px 20px;
+      border-width: 3px;
+      border-style: solid;
+    }
+
+    .explore_btn_2 {
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+      color: white;
+      font-family: 'Happy Monkey', cursive;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Wix Madefor Display', sans-serif;
+      font-family: 'Ysabeau', sans-serif;
+      background-color: rgb(242, 5, 100);
+      border-radius: 25px;
+      padding: 8px 15px;
+      border-style: solid;
+      border-color: rgb(242, 5, 100);
+    }
+
+    .explore_btn_1:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .explore_btn_2:hover {
+      background-color: white;
+      color: rgb(242, 5, 100);
+      display: flex;
+      align-items: center;
+    }
+
+    .pop {
+      font-size: 50px;
+      font-weight: 900;
+      color: white;
+    }
+
+    .pop_1 {
+      color: #c3c5c6;
+
+    }
+    .for_padding_0000{
+       color: white;
+    }
+    .E_more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo">
+            CfWith_Me
+        </div>
+        <div class="nav_bar">
+            <ul class="nav">
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="review.html"> Reviews </a> </li>
+                <li> <a href="destination_list.html"> Destination Listing </a> </li>
+                <li> <a href="user_login.html"> Login </a> </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="main">
+        <div class="main_h1">
+            <h1>Explore the beauty of nature Discover the new you</h1>
+        </div>
+        
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="lower">
+        <div class="lower_top">
+          <div class="lower_top_left">
+            <h1 class="pop">Destination Listing</h1>
+            <h2 class="pop_1">The best travel Destinations from Vacations to Honeymoon .</h2>
+          </div>
+          <div class="lower_top_right">
+            <button class="explore_btn_2"> Filter for U </button>
+          </div>
+        </div>
+        <div class="lower_middle">
+          <div class="lower_middle_1">
+            <img class="lower_middle_img"
+              src="img102.jpg"
+              alt="">
+            <div class="lower_middle_text">
+              <div class="lower_middle_text_1 for_padding_0000">
+                <h2>Wates Beach</h2>
+                <h2>⭐ 4.90</h2>
+              </div>
+              <p class="for_padding for_padding_0000">Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+              <div class="lower_middle_text_1">
+                <h1 class="for_padding for_padding_0000">$ 122,23</h1>
+                <button class="explore_btn_2"> Book Now </button>
+              </div>
+            </div>
+          </div>
+          <div class="lower_middle_1">
+            <img class="lower_middle_img"
+              src="img100.jpg"
+              alt="">
+            <div class="lower_middle_text">
+              <div class="lower_middle_text_1 for_padding_0000">
+                <h2>Megah Asri</h2>
+                <h2>⭐ 4.60</h2>
+              </div>
+              <p class="for_padding for_padding_0000">Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+              <div class="lower_middle_text_1">
+                <h1 class="for_padding for_padding_0000">$ 148,43</h1>
+                <button class="explore_btn_2"> Book Now </button>
+              </div>
+            </div>
+          </div>
+          <div class="lower_middle_1">
+            <img class="lower_middle_img"
+              src="img99.jpg"
+              alt="">
+            <div class="lower_middle_text">
+              <div class="lower_middle_text_1 for_padding_0000">
+                <h2>Nglayur Beach</h2>
+                <h2>⭐ 4.70</h2>
+              </div>
+              <p class="for_padding for_padding_0000">Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+              <div class="lower_middle_text_1">
+                <h1 class="for_padding for_padding_0000">$ 132,65</h1>
+                <button class="explore_btn_2"> Book Now </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <br>
+        <br>
+  
+  
+        <div class="lower_middle">
+          <div class="lower_middle_1">
+            <img class="lower_middle_img"
+              src="img98.jpg"
+              alt="">
+            <div class="lower_middle_text">
+              <div class="lower_middle_text_1 for_padding_0000" >
+                <h2>Karangjahe</h2>
+                <h2>⭐ 4.60</h2>
+              </div>
+              <p class="for_padding for_padding_0000" >Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+              <div class="lower_middle_text_1">
+                <h1 class="for_padding for_padding_0000" >$ 119,29</h1>
+                <button class="explore_btn_2"> Book Now </button>
+              </div>
+            </div>
+          </div>
+          <div class="lower_middle_1">
+            <img class="lower_middle_img"
+              src="img97.jpg"
+              alt="">
+            <div class="lower_middle_text">
+              <div class="lower_middle_text_1 for_padding_0000" >
+                <h2>Caruban Beach</h2>
+                <h2>⭐ 4.70</h2>
+              </div>
+              <p class="for_padding for_padding_0000">Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+              <div class="lower_middle_text_1">
+                <h1 class="for_padding for_padding_0000">$ 128,29</h1>
+                <button class="explore_btn_2"> Book Now </button>
+              </div>
+            </div>
+          </div>
+          <div class="lower_middle_1">
+            <img class="lower_middle_img"
+              src="img95.jpg"
+              alt="">
+            <div class="lower_middle_text">
+              <div class="lower_middle_text_1 for_padding_0000" >
+                <h2>Mbrumbung</h2>
+                <h2>⭐ 4.50</h2>
+              </div>
+              <p class="for_padding for_padding_0000" >Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+              <div class="lower_middle_text_1">
+                <h1 class="for_padding_0000">$ 182,33</h1>
+                <button class="explore_btn_2"> Book Now </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <br>
+        <br>
+
+        <div class="lower_middle">
+            <div class="lower_middle_1">
+              <img class="lower_middle_img"
+                src="sky_div_img.jpg"
+                alt="">
+              <div class="lower_middle_text">
+                <div class="lower_middle_text_1 for_padding_0000" >
+                  <h2>Dubai</h2>
+                  <h2>⭐ 4.60</h2>
+                </div>
+                <p class="for_padding for_padding_0000" >Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+                <div class="lower_middle_text_1">
+                  <h1 class="for_padding for_padding_0000" >$ 119,29</h1>
+                  <button class="explore_btn_2"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="lower_middle_1">
+              <img class="lower_middle_img"
+                src="skuba_img.jpg"
+                alt="">
+              <div class="lower_middle_text">
+                <div class="lower_middle_text_1 for_padding_0000" >
+                  <h2>Goa</h2>
+                  <h2>⭐ 4.70</h2>
+                </div>
+                <p class="for_padding for_padding_0000">Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+                <div class="lower_middle_text_1">
+                  <h1 class="for_padding for_padding_0000">$ 128,29</h1>
+                  <button class="explore_btn_2"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="lower_middle_1">
+              <img class="lower_middle_img"
+                src="surf_img.jpg"
+                alt="">
+              <div class="lower_middle_text">
+                <div class="lower_middle_text_1 for_padding_0000" >
+                  <h2>Costa Rica</h2>
+                  <h2>⭐ 4.50</h2>
+                </div>
+                <p class="for_padding for_padding_0000" >Tour package 3 Days 2 Nights with a good and friendly tour Guide</p>
+                <div class="lower_middle_text_1">
+                  <h1 class="for_padding_0000">$ 182,33</h1>
+                  <button class="explore_btn_2"> Book Now </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <br>
+      <br>
+      <button class="explore_btn_2 E_more"> Explore more </button>
+  
+</body>
+
+</html>
